@@ -62,10 +62,11 @@ function showForm(type){
             alert('Incorrect Password');
             return;
         }
+        document.getElementById("loginForm").classList.add('d-none');
+        document.getElementById("flower").classList.remove('d-none');
         alert('Login Successful!')
         document.getElementById('logEmail').value='';
         document.getElementById('logPassword').value='';
-        document.getElementById("loginForm").classList.add('d-none');
-        document.getElementById("flower").classList.remove('d-none');
+        
 
     }
